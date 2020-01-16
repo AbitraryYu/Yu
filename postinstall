@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# Root Permission
+#if ["$EUID" -ne 0]
+#	then echo "Please run as root"
+#	exit
+#fi
+
+
+# Install sudo
+#echo Install sudo..
+#pacman -S sudo
+
+# Update Arch Linux first
+echo Updating Arch...
+sudo pacman -Syu
+
+# Install Xorg
+echo Installing Display server xorg...
+sudo pacman -S xorg-server
+
+# Install lightdm
+echo Installing Display Manager lightdm...
+sudo pacman -S lightdm
+
+# Install lightdm-greeter
+echo Installing Display Manager greeter...
+sudo pacman -S lightdm-gtk-greeter
+
+# Install i3
+echo Installing window manager i3...
+sudo pacman -S i3-wm
+
+# Install Rxvt
+echo Installing Terminal emulator Rxvt...
+sudo pacman -S rxvt-unicode
+
+# Install ALSA
+echo Installing sound manager ALSA...
+sudo pacman -S alsa-utils
+
+# Install Fonts
+# Chinese Fonts
+echo Installing Chinese Fonts...
+sudo pacman -S adobe-source-han-sans-cn-fonts adobe-source-han-sans-tw-fonts
+
+# Source Sans Pro
+echo Installing Optional Font Source Sans Pro...
+sudo pacman -S adobe-source-sans-pro-fonts
+
+echo Installation complete.
