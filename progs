@@ -27,4 +27,5 @@
 ,lightdm-gtk-greeter,default greeter for LightDM,,,,,,,,,,,,
 ,adobe-source-han-sans-otc-fonts,fonts,,,,,,,,,,,,
 ,accountsservice,interface for usre account query and manipulation,,,,,,,,,,,,
-,,,,,,,,,,,,,,
+,powerline,statusline plugin,,,,,,,,,,,,
+,powerline-fonts,fonts for powerline,,,,,,,,,,,,
